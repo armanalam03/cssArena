@@ -1,0 +1,78 @@
+.arenas_container{
+  display: flex;
+  flex-direction: row;
+  width: 82%;
+  height: 100%;
+  background-color: #000D15;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1vw;
+}
+
+.arenas_container_heading{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: fira code;
+}
+
+.arenas_container_heading_text{
+  padding: 1vw;
+  background-color: #0D2635;
+  border-radius: 10px;
+}
+
+.arenas_tiles_container{
+  width: 100%;
+  height: 92%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 17vw;
+  margin-top: 1vw;
+  padding: 1vw 2vw;
+  grid-gap: 2vw;
+  overflow-y: auto;
+}
+
+.arena_tile{
+  background-color: #0D2635;
+  padding: 1vw;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  animation-name: bounce;
+  animation-duration: 1s;
+}
+
+@keyframes bounce {
+  0% {scale: 0.95;}
+  75% {scale: 1.03;}
+  100% {scale: 1;}
+}
+
+.arena_tile:hover{
+  transform: scale(1.05);
+  outline: 1px solid rgba(255, 255, 255, 0.3);
+  outline-offset: 5px;
+}
+
+.arena_tile_img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.arena_tile_id{
+  padding: 0.5vw;
+  background-color: #000D15;
+  border-radius: 10px;
+  color: white;
+  font-family: fira code;
+  width: 100%;
+  text-align: center;
+}

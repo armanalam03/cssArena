@@ -1,0 +1,46 @@
+.home_sidebar{
+  display: flex;
+  flex-direction: column;
+  width: 18%;
+  height: 100%;
+  background-color: #001A2A;
+}
+
+.tabs{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 1vw;
+}
+
+.tab{
+  padding: 1vw;
+  width: 100%;
+  color: white;
+  font-family: fira code;
+  font-size: 1.3vw;
+  border-radius: 10px;
+  margin-bottom: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.tab.selected{
+  background-color: #000D15;
+}
+
+.tab:hover{
+  background-color: #000d1559;
+}
+
+.tab_name{
+  transition: all 0.2s ease-in-out;
+}
+
+.tab:hover .tab_name{
+  padding-left: 1vw;
+  font-size: 1.32vw;
+}
